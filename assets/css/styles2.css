@@ -1,0 +1,124 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: white;
+    width: 600px;
+    min-height: 461px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    animation: modalFadeIn ease-in-out 0.6s;
+}
+
+.modal-close {
+    position: absolute;
+    padding: 22px 16px;
+    right: 0;
+    color: white;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.modal-close:hover {
+    color: black;
+    background-color: #ccc;
+}
+
+.modal-header {
+    padding: 32px 16px;
+    background: #009688;
+    color: white;
+    display: flex;
+    font-size: 32px;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 5px;
+    font-family: "Segoe UI";
+}
+
+.modal-body,
+.modal-footer {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    padding: 15px 0;
+    font-family: "Lato";
+    font-size: 16px;
+}
+
+.modal-input {
+    padding: 8px;
+    /* margin: 1px; */
+    margin-bottom: 24px;
+    border: 1px solid gray;
+    width: 100%;
+    font-size: 15px;
+}
+
+#buy-ticket {
+    width: 100%;
+    margin: 16px 1px;
+    background-color: #009688;
+    color: white;
+    padding: 17px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#buy-ticket:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.modal-footer .modal-help {
+    text-align: right;
+}
+
+.modal-footer .modal-help a {
+    color: #2196f3;
+}
+
+#close {
+    background-color: tomato;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    margin: 11px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#close:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

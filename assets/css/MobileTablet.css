@@ -1,0 +1,18 @@
+@media(max-width: 63.9375em) {
+    .buy-btn,
+    .contact-form .form-submit {
+        padding: 15px!important;
+    }
+    .contact-form .form-control {
+        padding: 15px!important;
+    }
+    .social-list {
+        font-size: 32px!important;
+    }
+    .social-list i {
+        padding: 0 12px!important;
+    }
+    .sponsor {
+        font-size: 32px!important;
+    }
+}

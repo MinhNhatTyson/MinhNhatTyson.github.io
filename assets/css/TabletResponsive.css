@@ -1,0 +1,9 @@
+@media(min-width: 46.25em) and (max-width: 63.9375em) {
+    .Content-section {
+        max-width: 100%;
+    }
+    .contact-info {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
