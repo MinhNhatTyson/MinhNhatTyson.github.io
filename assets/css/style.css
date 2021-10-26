@@ -416,12 +416,12 @@ html {
 }
 
 #footer {
-    padding: 64px 16px;
+    padding: 24px 12px;
     text-align: center;
 }
 
 .social-list {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 #footer .social-list i {
